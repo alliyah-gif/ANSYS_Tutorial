@@ -12,3 +12,7 @@ ns = DataModel.Project.Model.AddNamedSelection()
 ns.Name = "HelloWorld"
 
 print("Named selections in project: ", [n.Name for n in DataModel.Project.Model.NamedSelections.Children])
+
+"""STDOUT
+
+"""

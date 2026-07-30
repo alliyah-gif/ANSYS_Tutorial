@@ -1,6 +1,6 @@
-# Learning Mechanical Scripting — Roadmap for the Bolted-Connection Automation
+# Learning Mechanical Scripting 
 
-## 0. Orientation — what you're actually learning
+## 0. Orientation
 
 "Mechanical scripting" = the built-in **Scripting** view inside Ansys Mechanical
 (Automation tab → Scripting). Historically IronPython, newer releases are adding native
@@ -14,7 +14,7 @@ a normal script/notebook. Once a block works, strip the `from ansys.mechanical.c
 import App` / `App(globals=globals())` lines and paste the rest directly into
 Mechanical's Scripting pane. This is an explicitly supported workflow, not a hack.
 
-## 1. Free resources, roughly in the order to use them
+## 1. Free resources
 
 | Resource | What it's good for |
 |---|---|
@@ -26,10 +26,7 @@ Mechanical's Scripting pane. This is an explicitly supported workflow, not a hac
 | **"Automate the Boring Stuff in Ansys Mechanical"** (community tutorial site) | Practical IronPython-specific quirks (the `clr` module, .NET interop) that official docs gloss over |
 | **Ansys Learning Forum / Innovation Space** | For when you're stuck on something specific — active community, Ansys staff participate |
 
-## 2. Staged build plan, mapped to your spec
-
-Don't try to write the whole script at once — each stage below is a runnable milestone.
-
+## 2. Staged build plan
 ### Stage A — Read-only tree navigation (learn the shape of the data)
 Goal: get comfortable with `Model`, `DataModel`, looping, and printing — before changing
 anything.
