@@ -26,3 +26,10 @@ matching_faces = [f for f in faces if f.Id in source_ids]
 print(len(matching_faces))
 
 #NOTE: Looking for: Ansys.ACT.Interfaces.Geometry.GeoSurfaceTypeEnum.GeoSurfaceCylinder
+print("="*30)
+cyl_faces = [f for f in faces if f.SurfaceType == Ansys.ACT.Interfaces.Geometry.GeoSurfaceTypeEnum.GeoSurfaceCylinder]  # confirm the exact enum name/value first by printing f.SurfaceType on a few faces
+for f in cyl_faces:
+    print(f.Id, f.Radius, f.Centroid)
+print("="*30)
+for f in matching_faces:
+    print(f.Id, f.Radius, list(f.Centroid))
