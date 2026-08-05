@@ -7,7 +7,7 @@ app = App(globals = globals())
 print(app)
 
 #NOTE: Trivial analysis
-Model.addStaticStructuralAnalysis()
+Model.AddStaticStructuralAnalysis()
 ns = DataModel.Project.Model.AddNamedSelection()
 ns.Name = "HelloWorld"
 
